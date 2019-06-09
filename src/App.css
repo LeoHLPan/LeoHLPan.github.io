@@ -1,4 +1,11 @@
 .App {
+  display: flex;
+  background: #ff0000 url(images/bridge.jpg);
+  height: 100vh;
+  margin: 0;
+  background-size: cover;
+  justify-content: center;
+  align-items: center;
   text-align: center;
 }
 
