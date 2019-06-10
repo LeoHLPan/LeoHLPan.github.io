@@ -21,7 +21,11 @@ class DigitalClock extends React.Component {
   render() {
     const time = this.state.time;
 
-    return <h1>{time.toLocaleTimeString()}</h1>;
+    return (
+      <div className="digital-clock">
+        <h2>{time.toLocaleTimeString()}</h2>
+      </div>
+    );
   }
 }
 
