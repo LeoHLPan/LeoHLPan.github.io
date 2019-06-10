@@ -1,13 +1,17 @@
 import React from "react";
 import DigitalClock from "./DigitalClock";
-import "../App.css";
+import Title from "./Title";
+import "../style.css";
 
-function App() {
-  return (
-    <div className="App">
-      <DigitalClock />
-    </div>
-  );
+class App extends React.Component {
+  render() {
+    return (
+      <div className="app">
+        <DigitalClock />
+        <Title />
+      </div>
+    );
+  }
 }
 
 export default App;
