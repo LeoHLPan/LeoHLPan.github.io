@@ -9,6 +9,8 @@ class App extends React.Component {
       <div className="app">
         <DigitalClock />
         <Title />
+        <button className="me-button" />
+        <button className="resume-button" />
       </div>
     );
   }
