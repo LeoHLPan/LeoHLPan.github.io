@@ -10,15 +10,24 @@ h1 {
   flex-direction: column; */
 }
 
-.digital-clock {
-  /* height: 10vh; */
-  /* background-color: green; */
-}
+/* .digital-clock {
+  height: 10vh;
+  background-color: green;
+} */
 
 .title {
   /* height: 90vh; */
   margin-top: 30vh;
   /* background-color: red; */
+}
+
+.about {
+  background-color: #cccccc;
+  justify-content: center;
+  /* text-align: center; */
+  border-radius: 20px;
+  margin: 5% 10% 5% 10%;
+  padding: 20px 50px 20px 50px;
 }
 
 .me-button,
