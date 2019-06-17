@@ -1,7 +1,9 @@
 import React from "react";
 import DigitalClock from "./DigitalClock";
 import Title from "./Title";
+import Helmet from "react-helmet";
 import "../style.css";
+
 import resumepdf from "../assets/resume.pdf";
 
 class App extends React.Component {
@@ -12,6 +14,11 @@ class App extends React.Component {
   render() {
     return (
       <div className="app">
+        <Helmet>
+          <style>{"body {background-color: deepskyblue;}"}</style>
+          <title>Intergral</title>
+        </Helmet>
+
         <DigitalClock />
         <Title />
         <button

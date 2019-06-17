@@ -2,6 +2,8 @@ h1 {
   font-size: 3rem;
 }
 
+/* Main page */
+
 .app {
   margin: 0;
   justify-content: center;
@@ -21,15 +23,6 @@ h1 {
   /* background-color: red; */
 }
 
-.about {
-  background-color: #83f52c;
-  justify-content: center;
-  /* text-align: center; */
-  border-radius: 20px;
-  margin: 5% 10% 5% 10%;
-  padding: 20px 50px 20px 50px;
-}
-
 .me-button,
 .resume-button {
   margin: 0px 20px 20px 20px;
@@ -42,10 +35,28 @@ h1 {
   outline: 0;
   cursor: pointer;
 }
-
 .me-button {
   background: url(./images/me.png) center no-repeat;
   background-size: 100% 100%;
+}
+.resume-button {
+  background: url(./images/resume.png) center no-repeat;
+  background-size: 100% 100%;
+}
+.me-button::-moz-focus-inner,
+.resume-button::-moz-focus-inner {
+  border: 0;
+}
+
+/* About me page */
+
+.about {
+  background-color: #83f52c;
+  justify-content: center;
+  /* text-align: center; */
+  border-radius: 20px;
+  margin: 5% 10% 5% 10%;
+  padding: 20px 50px 20px 50px;
 }
 
 .me-header {
@@ -80,17 +91,24 @@ h1 {
   height: 50px;
 }
 
-.resume-button {
-  background: url(./images/resume.png) center no-repeat;
-  background-size: 100% 100%;
+.icon-container {
+  margin-left: 5em;
+  margin-right: 5em;
+  background-color: #555555;
+  justify-content: center;
+  text-align: center;
+  border-radius: 40px;
+  padding: 1em;
+}
+.icon-container a {
+  margin: 1.5em;
+}
+.icon-container img {
+  width: 100px;
+  height: 100px;
 }
 
-.me-button::-moz-focus-inner,
-.resume-button::-moz-focus-inner {
-  border: 0;
-}
-
-.App-logo {
+/* .App-logo {
   animation: App-logo-spin infinite 20s linear;
   height: 40vmin;
   pointer-events: none;
@@ -118,4 +136,4 @@ h1 {
   to {
     transform: rotate(360deg);
   }
-}
+} */
