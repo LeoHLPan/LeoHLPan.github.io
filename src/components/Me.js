@@ -1,5 +1,6 @@
 import React from "react";
 import Helmet from "react-helmet";
+import me from "./../images/me.png";
 
 class Me extends React.Component {
   //   componentDidMount = () => {
@@ -12,12 +13,17 @@ class Me extends React.Component {
     this.props.history.push("/");
   };
 
+  header = icon => {
+    return (
+      <div className="me-header">
+        <img src={icon} alt={icon} />
+      </div>
+    );
+  };
+
   introduction = () => {
     return (
       <div>
-        <Helmet>
-          <style>{"body {background-color: #2c2c2c;}"}</style>
-        </Helmet>
         <p>
           Hello! My name is Leo. <br />
           <br />I studied Computer Science at the University of Waterloo. My
@@ -35,8 +41,14 @@ class Me extends React.Component {
   render() {
     return (
       <div>
+        <Helmet>
+          <style>{"body {background-color: #2c2c2c;}"}</style>
+        </Helmet>
         <button onClick={() => this.goBack()}>Return [TEMP]</button>
-        <div className="about">{this.introduction()}</div>
+        <div className="about">
+          {this.header(me)}
+          {this.introduction()}
+        </div>
       </div>
     );
   }

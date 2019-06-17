@@ -22,7 +22,7 @@ h1 {
 }
 
 .about {
-  background-color: #cccccc;
+  background-color: #83f52c;
   justify-content: center;
   /* text-align: center; */
   border-radius: 20px;
@@ -46,6 +46,38 @@ h1 {
 .me-button {
   background: url(./images/me.png) center no-repeat;
   background-size: 100% 100%;
+}
+
+.me-header {
+  display: block;
+  overflow: hidden;
+  text-align: center;
+}
+
+.me-header::before,
+.me-header::after {
+  content: "";
+  display: inline-block;
+  vertical-align: middle;
+  position: relative;
+  width: 50%;
+  border: 1px solid black;
+}
+
+.me-header::before {
+  right: 0.5em;
+  margin-left: -50%;
+}
+
+.me-header::after {
+  left: 0.5em;
+  margin-right: -50%;
+}
+
+.me-header img {
+  vertical-align: middle;
+  width: 50px;
+  height: 50px;
 }
 
 .resume-button {
